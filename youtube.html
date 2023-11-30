@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youtube.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="youtube.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav1">
+        <i
+          class="fa-solid fa-bars"
+          style="color: white; font-size: 20px; margin: 18px 10px"
+        ></i>
+        <img
+          src="new-youtube-logo.jpeg"
+          alt="youtube"
+          width="100px"
+          height="70px"
+          class="youtubelogo"
+        />
+        <div class="searchbox">
+          <input type="text" placeholder="   Search" id="searchinput" />
+          <div class="searchicon">
+            <i
+              class="fa fa-thin fa-magnifying-glass"
+              style="
+                color: rgb(210, 207, 207);
+                font-size: 20px;
+                margin: 10px 10px;
+              "
+            ></i>
+          </div>
+        </div>
+        <div class="micsearch">
+          <i
+            class="fa-solid fa-microphone"
+            style="color: #f7f7f8; margin: 15px 15px; font-size: 20px"
+          ></i>
+        </div>
+        <div class="navend">
+          <i class="fa fa-light fa-video-plus" style="color: #ededed"></i>
+          <i
+            class="fa fa-light fa-bell"
+            style="color: #f7f7f8; margin: 25px 10px; font-size: 20px"
+          ></i>
+          <div class="profile">
+            <i
+              class="fa fa-light fa-user"
+              style="color: #f2f2f3; margin: 10px 13px; font-size: 20px"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aside">
+      <div class="sidebar">
+        <div class="menu">
+          <div class="home">
+            <i
+              class="fa-sharp fa-solid fa-house"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Home</p>
+          </div>
+          <div class="shorts">
+            <i
+              class="fa-sharp fa-solid fa-house"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Shorts</p>
+          </div>
+          <div class="subscription">
+            <i
+              class="fa-regular fa-rectangle-history"
+              style="color: #f7f7f8; margin: 10px"
+            ></i>
+            <p>Subscription</p>
+          </div>
+        </div>
+        <hr />
+        <div class="you">
+          <h3>You</h3>
+          <div class="yourchannal">
+            <i
+              class="fa-solid fa-square-user"
+              style="color: #fafafa; margin: 10px"
+            ></i>
+            <p>Your channal</p>
+          </div>
+          <div class="history">
+            <i
+              class="fa fa-regular fa-clock-rotate-left"
+              style="color: #fafcff; margin: 10px"
+            ></i>
+            <p>History</p>
+          </div>
+          <div class="yourvideos">
+            <i
+              class="fa-sharp fa-solid fa-house"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Your videos</p>
+          </div>
+          <div class="watchlater">
+            <i
+              class="fa-regular fa-clock"
+              style="color: #f4f7fa; margin: 10px"
+            ></i>
+            <p>Watch later</p>
+          </div>
+        </div>
+        <hr />
+        <div class="subscribe">
+          <h3>Subscription</h3>
+          <div class="sub-chennal">
+            <i
+              class="fa-regular fa-user"
+              style="color: #fcfcfd; margin: 10px"
+            ></i>
+            <p>Your channal</p>
+          </div>
+          <div class="sub-chennal">
+            <i
+              class="fa-solid fa-user-hair-long"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Your channal</p>
+          </div>
+          <div class="sub-chennal">
+            <i
+              class="fa-sharp fa-solid fa-user"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Your channal</p>
+          </div>
+          <div class="sub-chennal">
+            <i
+              class="fa-regular fa-user"
+              style="color: #fcfcfd; margin: 10px"
+            ></i>
+            <p>Your channal</p>
+          </div>
+          <div class="sub-chennal" id="showmore">
+            <i
+              class="fa-solid fa-user-vneck-hair"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Show more</p>
+          </div>
+        </div>
+        <hr />
+        <div class="explore">
+          <h3>Explore</h3>
+          <div id="Trending" class="explore-item">
+            <i
+              class="fa-sharp fa-solid fa-leaf-heart"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Trending</p>
+          </div>
+          <div id="Shopping" class="explore-item">
+            <i
+              class="fa-solid fa-bags-shopping"
+              style="color: #f4f5f6; margin: 10px"
+            ></i>
+            <p>Shopping</p>
+          </div>
+
+          <div id="Movies" class="explore-item">
+            <i
+              class="fa-solid fa-clapperboard-play"
+              style="color: #f6f7f9; margin: 10px"
+            ></i>
+            <p>Movies</p>
+          </div>
+          <div id="Live" class="explore-item">
+            <i
+              class="fa-solid fa-signal-stream"
+              style="color: #fcfcfd; margin: 10px"
+            ></i>
+            <p>Live</p>
+          </div>
+          <div id="Gaming" class="explore-item">
+            <i
+              class="fa-regular fa-gamepad"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Gaming</p>
+          </div>
+          <div id="News" class="explore-item">
+            <i
+              class="fa-solid fa-newspaper"
+              style="color: #ffffff; margin: 10px"
+            ></i>
+            <p>News</p>
+          </div>
+          <div id="Sports" class="explore-item">
+            <i
+              class="fa-solid fa-trophy"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Sports</p>
+          </div>
+          <div id="Learning" class="explore-item">
+            <i
+              class="fa-solid fa-lightbulb"
+              style="color: #fbfcfe; margin: 10px"
+            ></i>
+            <p>Learning</p>
+          </div>
+          <div id="Podcasts" class="explore-item">
+            <i
+              class="fa-sharp fa-solid fa-house"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Podcasts</p>
+          </div>
+          <div id="Playables" class="explore-item">
+            <i
+              class="fa-sharp fa-solid fa-house"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Playables</p>
+          </div>
+        </div>
+        <hr />
+        <div class="morefromutube">
+          <h3>More from YouTube</h3>
+          <div class="utube-type" id="youtube-premium">
+            <i
+              class="fa-brands fa-youtube"
+              style="color: #dd2f22; margin: 10px"
+            ></i>
+            <p>YouTube Premium</p>
+          </div>
+          <div class="utube-type" id="youtube-studio">
+            <i
+              class="fa-sharp fa-solid fa-house"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>YouTube Studio</p>
+          </div>
+          <div class="utube-type" id="youtube-music">
+            <i
+              class="fa-solid fa-circle-play"
+              style="color: #da3316; margin: 10px"
+            ></i>
+            <p>YouTube Music</p>
+          </div>
+          <div class="utube-type" id="youtube-kids">
+            <i
+              class="fa-sharp fa-solid fa-house"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>YouTube Kids</p>
+          </div>
+        </div>
+        <hr />
+        <div class="other">
+          <div class="other-item" id="setting">
+            <i
+              class="fa fa-solid fa-gear-complex"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Setting</p>
+          </div>
+          <div class="other-item" id="Report History">
+            <i
+              class="fa-sharp fa-solid fa-flag"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Report History</p>
+          </div>
+          <div class="other-item" id="Help">
+            <i
+              class="fa-solid fa-circle-question"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Help</p>
+          </div>
+          <div class="other-item" id="Send Feedback">
+            <i
+              class="fa-regular fa-square-info"
+              style="color: #f9fafa; margin: 10px"
+            ></i>
+            <p>Send Feedback</p>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="btns">
+          <button class="btn" id="all">All</button>
+          <button class="btn" id="mixes">Mixes</button>
+          <button class="btn" id="music">Music</button>
+          <button class="btn" id="live">Live</button>
+          <button class="btn" id="bollywoodmusic">Bollywood Music</button>
+          <button class="btn" id="mantras">Mantras</button>
+          <button class="btn" id="html">HTML</button>
+          <button class="btn" id="satsang">Satsang</button>
+          <button class="btn" id="datastructure">Data Structures</button>
+          <button class="btn" id="sitcomes">Sitcomes</button>
+          <button class="btn" id="lectures">Lectures</button>
+          <button class="btn" id="indianpopmusic">Indian pop music</button>
+          <button class="btn" id="next">&gt</button>
+          <!-- <button class="btn" id="recentlyupload">Recently Upload</button> -->
+        </div>
+        <div class="videos">
+          <div class="vedio" id="video1">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/NKF8MQx-Yo0?si=ph2mJubnZZLa3kUl"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Mix-Kalyanrayashtakam</h4>
+            <p>Jaydeep Kanabar,Lalita Ghodadra,Ami Joshi,and more</p>
+            <p>202k views.2 years ago</p>
+          </div>
+          <div class="vedio" id="video2">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/Ez8F0nW6S-w?si=J_Tr7uRBswm_1mCS"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Complete Git and Github Tutorial for</h4>
+            <h4>Begginers</h4>
+            <p>Apna College</p>
+            <p>902k views.2 months ago</p>
+          </div>
+          <div class="vedio" id="video3">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/ER9SspLe4Hg?si=e-UZk2f62Vas0dN6"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Java Script Tutorial in Hindi</h4>
+            <p>Code With Harry</p>
+            <p>902k views.12 months ago</p>
+          </div>
+          <div class="vedio" id="video4">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/2SXno61FX2k?si=ttEkU2LsIG3vbNIe"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Top 5 Frontend Project with Re-</h4>
+            <h4>sources to get Placement</h4>
+            <p>Anushka Gupta</p>
+            <p>490k views.10 months ago</p>
+          </div>
+          <div class="vedio" id="video5">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/GHpayZ9Fm2w?si=zjoRkOoy0Oogvhvx"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>What is Manifestation? | Decoding the</h4>
+            <h4>Law of Attraction</h4>
+            <p>Humans of Bombay</p>
+            <p>702k views.2 months ago</p>
+          </div>
+          <div class="vedio" id="video6">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/iFB-nq-S0s4?si=jL-yYHSMvJjWhve4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>25102023-04</h4>
+            <p>Pushtimargiy Satsang</p>
+            <p>50k views.3 days ago</p>
+          </div>
+          <div class="vedio" id="video7">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/EZjrJdVfTY4?si=mVH3HGwSkomMMmfp"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Law Of Attraction Explained</h4>
+            <h4>According to Bhagvad Gita</h4>
+            <p>TRS Clips</p>
+            <p>559k views.8 months ago</p>
+          </div>
+          <div class="vedio" id="video8">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/EOrzE8V7OoE?si=JAtLREpnPIPQiKq8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Switch from 15000/Month to25LPA</h4>
+            <h4>How she learned DSA for Interviews</h4>
+            <p>Fraz</p>
+            <p>190k views.3 Weeks ago</p>
+          </div>
+
+          <div class="vedio" id="video9">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/54acVVq5clw?si=Q_bghc-F2Hg56-w3"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Self Respect - By Sandeep</h4>
+            <h4>Maheshwari</h4>
+            <p>Sandeep Maheshwari</p>
+            <p>3.2M views.1 year ago</p>
+          </div>
+          <div class="vedio" id="video10">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/hbeyGXaTSQE?si=iZLBHTHG059P51bY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Madhrashtakam | Popular</h4>
+            <h4>NEW SHREE KRISHNA BHAJAN..</h4>
+            <p>Bhakti Aarambh</p>
+            <p>7.6M views 2 months go</p>
+          </div>
+
+          <div class="vedio" id="video11">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/IXu5xAgCpvI?si=e8GDxeSRkUAVHxKc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Measures of central tendency|</h4>
+            <h4>BY Unnati Gandhi</h4>
+            <p>Unnati Gandhi</p>
+            <p>21k views 2 Years go</p>
+          </div>
+          <div class="vedio" id="video12">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/JbDktrsnH40?si=Hai0-czxk3QGCate"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Moh Moh Ke Dhaage| Lyrical Song</h4>
+            <h4>Monali Thakur,Anu Malik</h4>
+            <p>Superhit Music</p>
+            <p>4.06M views 4 Years go</p>
+          </div>
+          <div class="vedio" id="video13">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/nERFpslYMy4?si=-G_wpnysZtzxQOe8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>ASHISH BAGRECHA FULL SHOW|</h4>
+            <h4>Pyar,Umeed Aur Roshni|Poetry..</h4>
+            <p>Ashish Bagrecha</p>
+            <p>115K views 2weeks ago</p>
+          </div>
+          <div class="vedio" id="video14">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/GHpayZ9Fm2w?si=zjoRkOoy0Oogvhvx"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>What is Manifestation? | Decoding</h4>
+            <h4>Law of Attraction</h4>
+            <p>Humans of Bombay</p>
+            <p>702k views.2 months ago</p>
+          </div>
+          <div class="vedio" id="video15">
+            <iframe
+              width="350px"
+              height="260px"
+              src="https://www.youtube.com/embed/XAe8uP9J7_g?si=w1GtSx92HTem1WsE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <h4>Gujarati Lofi Mixtape 1|30 Minutes</h4>
+            <h4>to Relax and Chill|Gujarati Lo-fi</h4>
+            <p>Yours Lo-fi</p>
+            <p>7407K views 2 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="youtube.js"></script>
+  </body>
+</html>
